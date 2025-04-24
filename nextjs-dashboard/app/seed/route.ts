@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt';
+import bcrypt from "bcrypt";
 import postgres from 'postgres';
 import { invoices, customers, revenue, users } from '../lib/placeholder-data';
 
@@ -10,7 +10,7 @@ async function seedUsers() {
     CREATE TABLE IF NOT EXISTS users (
       id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
       name VARCHAR(255) NOT NULL,
-      email TEXT NOT NULL UNIQUE,
+      email TEXT NOT NULL UNIQU
       password TEXT NOT NULL
     );
   `;
