@@ -14,9 +14,6 @@
  }
 
 export async function GET() {
-  return Response.json({
-
-  });
    try {
    	return Response.json(await listInvoices());
    } catch (error) {
